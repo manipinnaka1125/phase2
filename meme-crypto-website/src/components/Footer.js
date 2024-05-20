@@ -5,14 +5,14 @@ const Footer = () => (
   <FooterContainer>
     <FooterContent>© 2024 CryptoMeme. All rights reserved.</FooterContent>
     <FooterLinks>
-      <FooterLink href="#">Home</FooterLink>
-      <FooterLink href="#">What is Crypto Meme?</FooterLink>
-      <FooterLink href="#">Wallets</FooterLink>
-      <FooterLink href="#">Community</FooterLink>
-      <FooterLink href="#">Crypto Meme Blog</FooterLink>
-      <FooterLink href="#">Foundation</FooterLink>
-      <FooterLink href="#">About</FooterLink>
-      <FooterLink href="#">Advisors</FooterLink>
+      <FooterLink href="/Home">Home</FooterLink>
+      <FooterLink href="/about">What is Crypto Meme?</FooterLink>
+      <FooterLink href="/Wallets">Wallets</FooterLink>
+      <FooterLink href="/Community">Community</FooterLink>
+      <FooterLink href="https://coindcx.com/blog/cryptocurrency/top-memes-tokens/">Crypto Meme Blog</FooterLink>
+      <FooterLink href="https://www.coindesk.com/learn/what-is-a-crypto-foundation/">Foundation</FooterLink>
+      <FooterLink href="/about">About</FooterLink>
+      <FooterLink href="https://www.coindesk.com/newsletters/crypto-for-advisors/">Advisors</FooterLink>
     </FooterLinks>
     <SocialMediaLinks>
       <SocialMediaLink href="#">
@@ -32,34 +32,36 @@ const Footer = () => (
 );
 
 const FooterContainer = styled.footer`
-  background-color: #333;
+  background-color: #222;
   color: #fff;
-  padding: 40px 20px; /* Reduced padding for smaller screens */
+  padding: 40px 20px;
   text-align: center;
 `;
 
 const FooterContent = styled.p`
   margin: 0;
-  font-size: 18px; /* Reduced font size for smaller screens */
-  margin-bottom: 20px; /* Reduced margin for smaller screens */
+  font-size: 18px;
+  margin-bottom: 20px;
 `;
 
 const FooterLinks = styled.div`
   display: flex;
-  flex-wrap: wrap; /* Allow links to wrap to next line on smaller screens */
+  flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 20px; /* Reduced margin for smaller screens */
+  margin-bottom: 30px;
+  
 `;
 
 const FooterLink = styled.a`
   color: #fff;
   text-decoration: none;
-  margin: 0 15px; /* Reduced margin for smaller screens */
-  font-size: 14px; /* Reduced font size for smaller screens */
+  margin: 0 15px;
+  font-size: 22px;
   transition: color 0.3s ease-in-out;
 
   &:hover {
     color: #ffd700;
+    transform: translateY(-3px);
   }
 `;
 

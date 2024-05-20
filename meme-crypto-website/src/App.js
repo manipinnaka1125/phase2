@@ -3,10 +3,13 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
-import Tokenomics from './pages/Tokenomics';
-import Roadmap from './pages/Roadmap';
-import Contact from './pages/Contact';
+
+
+
 import { Route, Routes } from 'react-router-dom';
+import WalletList from './pages/WalletList';
+import Community from './pages/Community';
+import CryptoCoinPenimedia from './pages/CryptoCoinPenimedia';
 
 function App() {
   return (
@@ -19,9 +22,9 @@ function App() {
           <Route path='/' element={<Home/>} exact/>
           <Route path='/Home' element={<Home/>}exact/>
           <Route path='/About' element={<About/>}exact/>
-          <Route path='/Tokenomics' element={<Tokenomics/>}exact/>
-          <Route path='/Roadmap' element={<Roadmap/>}exact/>
-          <Route path='/Contact' element={<Contact/>}exact/>
+          <Route path='/WalletList' element={<WalletList/>}exact/>
+          <Route path='/Community' element={<Community/>}exact/>
+          <Route path='/CryptoCoinPenimedia' element={<CryptoCoinPenimedia/>}exact/>
         </Routes>
 
       </main>

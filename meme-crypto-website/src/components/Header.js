@@ -16,9 +16,9 @@ const Header = () => {
       <NavMenu className={isMenuOpen ? 'open' : ''}>
         <NavItem to="/" onClick={toggleMenu}>Home</NavItem>
         <NavItem to="/about" onClick={toggleMenu}>What is Crypto Meme Coin?</NavItem>
-        <NavItem to="/tokenomics" onClick={toggleMenu}>Wallets</NavItem>
-        <NavItem to="/roadmap" onClick={toggleMenu}>Community</NavItem>
-        <NavItem to="/contact" onClick={toggleMenu}>Crypto Meme Coinpedia</NavItem>
+        <NavItem to="/WalletList" onClick={toggleMenu}>Wallets</NavItem>
+        <NavItem to="/Community" onClick={toggleMenu}>Community</NavItem>
+        <NavItem to="/CryptoCoinPenimedia" onClick={toggleMenu}>Crypto Meme Coinpedia</NavItem>
       </NavMenu>
     </HeaderContainer>
   );

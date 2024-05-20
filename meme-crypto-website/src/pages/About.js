@@ -1,7 +1,7 @@
-// src/components/About.js
 import React from 'react';
 import styled from 'styled-components';
 import crypto from '../assets/crypto.jpg';
+
 const About = () => (
   <Section>
     <Container>
@@ -16,6 +16,8 @@ const About = () => (
         <Description>
           Join us on our journey as we redefine what it means to invest, transact, and interact in the digital age. With CryptoMeme, the future is funnier, brighter, and more profitable than ever before.
         </Description>
+        {/* Button for more information */}
+        <WikiButton href="https://en.wikipedia.org/wiki/CryptoMemeCoin">More about CryptoMemeCoin</WikiButton>
       </Content>
     </Container>
     <GrowthSection>
@@ -72,17 +74,34 @@ const Description = styled.p`
 
 const GrowthSection = styled.div`
   padding: 60px 0;
-  background-color: #white;
+  background-color: #black;
 `;
 
 const GraphContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
+  margin-top: -50px;
 `;
 
 const GraphImage = styled.img`
   max-width: 100%;
+`;
+
+const WikiButton = styled.a`
+  display: inline-block;
+  background-color: #ffd700;
+  color: #333;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    background-color: #ffcc00;
+    transform: translateY(-3px);
+  }
 `;
 
 export default About;
