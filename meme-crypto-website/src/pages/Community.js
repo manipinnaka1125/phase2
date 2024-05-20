@@ -7,19 +7,19 @@ const Community = () => {
     {
       name: 'Official Forum',
       platform: 'Forum',
-      link: 'https://exampleforum.com',
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdXfpNaNX8pFtTkMSgA4Txjo248a_uYDUh-5um4LiVgGt-yAw/viewform?embedded=true",
       description: 'Join our official forum to engage with the community, ask questions, and share your experiences.',
     },
     {
       name: 'Discord Channel',
       platform: 'Discord',
-      link: 'https://examplediscord.com',
+      link: 'https://discord.com/',
       description: 'Connect with other community members on our Discord channel. Chat, participate in events, and get updates.',
     },
     {
       name: 'Reddit Community',
       platform: 'Reddit',
-      link: 'https://examplereddit.com',
+      link: 'https://www.reddit.com/',
       description: 'Join our Reddit community to discuss Crypto Meme coin, share memes, and stay updated on the latest news.',
     },
     // Add more community data as needed
